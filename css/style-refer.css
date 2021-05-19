@@ -1,0 +1,29 @@
+body{
+  height: 100%;
+  background-color: #F0EBE5;
+  margin: 0 auto;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: #6B5152;
+  font-size: 20px;
+  margin: 20px;
+  line-height: 30px;
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  color: #965454;
+  font-size: 50px;
+  margin: 20px;
+}
+
+#homebtn{
+  position: fixed;
+  width:5%;
+  bottom:5%;
+  right:0;
+  z-index:100;
+  opacity: 0.7;
+}

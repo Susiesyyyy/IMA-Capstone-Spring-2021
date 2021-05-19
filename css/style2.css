@@ -1,0 +1,898 @@
+body{
+  height: 100%;
+  background-color: #F0EBE5;
+  padding-bottom: 60px;
+  margin: 0;
+  overflow: hidden;
+}
+
+button:focus {outline:0;}
+
+button{
+  background: none;
+  border:none;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: #6B5152;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#bgimg{
+  position: fixed;
+  width:200%;
+  z-index:-1;
+  left:0;
+  top:-30%;
+  transition: left 2s, top 2s;
+}
+
+
+#ac1{
+  position: fixed;
+  right:0;
+  width: 5%;
+  bottom:20%;
+    z-index: 100;
+      opacity: 0.7;
+}
+#ac2{
+  position:fixed;
+  right:0;
+  width: 5%;
+  bottom:25%;
+    z-index: 100;
+      opacity: 0.7;
+}
+
+#cmbtn1{
+  position: fixed;
+  display: none;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  width: 10%;
+  height: 100%;
+  z-index:0;
+  transition: left 2s;
+}
+#homebtn{
+  position: fixed;
+  width:5%;
+  bottom:10%;
+  right:0;
+  z-index:100;
+  opacity: 0.7;
+}
+
+#leftarrow{
+  position: fixed;
+  width:5%;
+  bottom:0;
+  left:0;
+  z-index:100;
+  opacity: 0.7;
+}
+
+#rightarrow{
+  position: fixed;
+  width:5%;
+  bottom:0;
+  right:0;
+  z-index:100;
+  opacity: 0.7;
+}
+
+#SR1{
+  display: block;
+  position: relative;
+  font-size: 60px;
+  padding-left: 50px;
+  z-index:0;
+}
+
+#SR1-1{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#SR1-2{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#btn1{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+
+@keyframes fall1 {
+  0%{
+    transform: translateX(0) translateY(0);
+  }
+  100%{
+    transform: translateX(0) translateY(90%);
+  }
+}
+
+
+#SR2{
+  position: relative;
+  display: none;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:1;
+}
+
+#SR2-1{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR2-2{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR2-3{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#SR2-4{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+#btn2{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR31{
+  position: relative;
+  display: none;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:2;
+}
+
+#SR3-1{
+  width: 95%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR3-2{
+  width: 90%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR3-3{
+  width: 75%;
+  opacity: 0;
+  animation-name: SR3small1;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR3-4{
+  width: 70%;
+  opacity: 0;
+  animation-name: SR3small2;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR3-5{
+  position: fixed;
+  /* width: 40%; */
+  left:50%;
+  bottom:5%;
+  opacity: 0;
+  animation-name: SR3big;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#btn3{
+  position: fixed;
+  width: 3%;
+  left: 73%;
+  bottom: 33%;
+  opacity: 0;
+  animation-name: blinkk;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR32{
+  position: relative;
+  display: none;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:3;
+}
+
+
+#SR3-6{
+  position: fixed;
+  width: 20%;
+  left: 5%;
+  top: 5%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR3-7{
+  position: fixed;
+  width: 60%;
+  left: 30%;
+  top: 25%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+#SR3-8{
+  position: fixed;
+  width: 60%;
+  left: 30%;
+  top: 45%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#btn4{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR33{
+  position: fixed;
+  display: none;
+  font-size: 40px;
+  top: 100%;
+  z-index:4;
+  animation-name: SR33goup;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR3-9{
+  text-align: center;
+  height:10%;
+}
+
+#SR3-10{
+  height:80%;
+}
+
+#SR3-11{
+  height:10%;
+  text-align: center;
+}
+
+#btn5{
+  cursor: pointer;
+}
+
+#SR41{
+  position: relative;
+  display: none;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:5;
+}
+
+#SR4-1{
+  width: 70%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR4-2{
+  width: 75%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR4-3{
+  width: 75%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#SR4-4{
+  width: 70%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+
+#SR4-5{
+  position:fixed;
+  width:15%;
+  left: 80%;
+  top: 65%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+
+}
+
+#btn6{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR42{
+  position: relative;
+  display: none;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:6;
+}
+
+#SR4-6{
+  position:fixed;
+  width:15%;
+  top: 5%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+#SR4-7{
+  position: relative;
+  width: 60%;
+  margin-top: 5%;
+  left: 35%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR4-8{
+  position: relative;
+  width: 65%;
+  left: 30%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR4-9{
+  position: relative;
+  width: 65%;
+  left: 30%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#SR4-10{
+  position: relative;
+  width: 60%;
+  left: 35%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+#btn7{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR5{
+  position: relative;
+  display: none;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:7;
+}
+
+#SR5-1{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR5-2{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR5-3{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#SR5-4{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+#btn8{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR6{
+  display: none;
+  position: relative;
+  font-size: 60px;
+  padding-left: 50px;
+  z-index:8;
+}
+
+#SR6-1{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR6-2{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#SR6-3{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#btn9{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR7{
+  display: none;
+  position: relative;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:9;
+}
+
+#SR7-1{
+  position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR7-2{
+  position: relative;
+  width: 40%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+#SR7-3{
+  position: relative;
+  width: 40%;
+  left:10%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+#SR7-4{
+  position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#SR7-5{
+  position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#btn10{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR81{
+  display: none;
+  position: relative;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:10;
+}
+
+#SR8-1{
+    position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR8-2{
+    position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#SR8-3{
+  position: relative;
+  left: 30%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#SR8-4{
+  position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#SR8-5{
+  position: relative;
+  left: 30%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#SR8-6{
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+#btn11{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+
+#SR82{
+  position: fixed;
+  display: none;
+  font-size: 40px;
+  left:100%;
+  width: 100%;
+  z-index:11;
+  animation-name: SR82goleft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR8-7{
+  left:100%;
+  text-align: center;
+  height:10%;
+}
+
+#SR8-8{
+  height:80%;
+}
+
+#SR8-9{
+  height:10%;
+  text-align: center;
+}
+
+#btn12{
+  cursor: pointer;
+}
+
+
+#SR9{
+  display: none;
+  position: relative;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:12;
+}
+
+#SR9-1{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR9-2{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#SR9-3{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#SR9-4{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+#SR9-5{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+#btn13{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#SR10{
+  display: none;
+  position: relative;
+  font-size: 40px;
+  padding-left: 50px;
+  z-index:13;
+}
+
+#SR10-1{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#SR10-2{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#SR10-3{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#SR10-4{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+#SR10-5{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+#SR10-6{
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+#gotomap{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+#gotostory{
+  animation-name:blinkk;
+  animation-duration: 2s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+@keyframes blinkk{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes SR3small1{
+  0%{
+    opacity: 0; width: 75%;
+  }
+  75%{
+    opacity: 1; width:75%;
+  }
+  100%{
+    opacity: 1; width: 40%;
+  }
+}
+
+@keyframes SR3small2{
+  0%{
+    opacity: 0; width: 70%;
+  }
+  75%{
+    opacity: 1; width:70%;
+  }
+  100%{
+    opacity: 1; width: 40%;
+  }
+}
+
+@keyframes SR3big {
+  0%{
+    opacity: 0; width:0%;left:90%;
+  }
+  100%{
+    opacity: 1; width: 40%;left:50%;
+  }
+}
+
+@keyframes SR33goup{
+  0%{
+    top: 100%;
+  }
+  100%{
+  top:0;
+  }
+}
+
+@keyframes SR82goleft{
+  0%{
+    left: 100%;
+  }
+  100%{
+  left:0;
+  }
+}
