@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Old and New "Silk Road"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- load p5 library -->
+    <script src="js/lib/p5.js" type="text/javascript"></script>
+    <script src="js/lib/p5.dom.js" type="text/javascript"></script>
+    <script src="js/lib/p5.sound.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <video id="opening" controls autoplay muted>
+      <source src="video/Silk Road_300.mp4" type="video/mp4">
+    </video>
+
+
+    <div id="intro1">
+      <h1>The Old and New "Silk Road"</h1>
+    </div>
+
+
+    <div id="start">
+      <p>Start the journey!</p>
+      <button id="home" class="camelbtn" onclick="gotohome()">
+        <img src="img/camel.png" alt="">
+      </button>
+    </div>
+
+
+    <div id="homepage">
+      <img id="homepageimg" src="img/homepage.png" alt="" style="width:100%">
+
+    <div id="icon1">
+      <p>Introduction</p>
+      <a href="introduction.html" target="_blank">
+        <button id="iconbtn1" class="camelbtn">
+          <img src="img/camel.png" alt="" style="width:50%">
+        </button>
+      </a>
+      <p id="icon1intro">Brief Intro about Silk Road and Belt and Road Initiative</p>
+    </div>
+
+    <div id="icon2">
+      <p>Maps</p>
+      <a href="map.html" target="_blank">
+      <button id="iconbtn2" class="camelbtn">
+        <img src="img/camel.png" alt="" style="width:50%">
+      </button>
+      </a>
+      <p id="icon2intro">Maps of Routes</p>
+    </div>
+
+    <div id="icon3">
+      <p>Stories</p>
+      <a href="story.html" target="_blank">
+      <button id="iconbtn3" class="camelbtn">
+        <img src="img/camel.png" alt="" style="width:50%">
+      </button>
+      </a>
+      <p id="icon3intro">Comparison between Culture, Merchandise, and Transportation</p>
+    </div>
+
+    <div id="icon4">
+      <p>Reference</p>
+      <a href="refer.html" target="_blank">
+      <button id="iconbtn4" class="camelbtn">
+        <img src="img/camel.png" alt="" style="width:50%">
+      </button>
+      </a>
+      <p id="icon4intro">Work Cited Page</p>
+    </div>
+
+  </div>
+  <!-- end div of homepage -->
+
+      <script src="js/sketch.js" type="text/javascript"></script>
+
+  </body>
+</html>
